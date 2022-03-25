@@ -1,0 +1,14 @@
+.container {
+    padding-left: 6rem;
+    color: white;
+    margin-top: 2rem;
+    flex-wrap: nowrap;
+
+}
+
+.music-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
