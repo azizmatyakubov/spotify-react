@@ -1,0 +1,140 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+      169deg,
+      rgba(60, 14, 8, 1) 0%,
+      rgba(14, 14, 15, 1) 46%
+    );
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.dropdown-image {
+    width: 1.5rem;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+.sidebar {
+    width: 15rem;
+    height: 100%;
+    background-color: black;
+    padding: 6px 8px;
+    color: #8b8888;
+}
+
+.logo {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo-img {
+    width: 70%;
+}
+
+.sidebar-button {
+    padding: 4px 12px;
+    border-radius: 4px;
+    align-items: center;
+    
+}
+.sidebar-button:hover {
+    background-color: #222326;
+    color: whitesmoke;
+}
+
+.sidebar-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    padding: 14px;
+    margin-right: 1rem;
+    color: white;
+}
+
+.bg-grey {
+    background-color: grey;
+}
+
+.bg-linear {
+    background: rgb(135,11,223);
+    background: linear-gradient(151deg, rgba(135,11,223,1) 10%, rgba(109,86,224,1) 48%, rgba(0,212,255,1) 86%);
+}
+
+hr {
+    border: 0;
+    display:block;          
+    background-color:#383835;
+    height: 1px;
+    width: 94%;
+  }
+
+.sidebar-items {
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.sidebar-music-lists {
+    height:70vh;
+    overflow:scroll;
+    overflow-x:hidden;
+    color: #8b8888;
+    margin-left: 1rem;
+}
+
+.sidebar-music-lists::-webkit-scrollbar {
+    background-color: black;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:#383835;
+    height: 150px;
+
+
+}
+
+.sidebar-music-lists:vertical{
+    height: 20px;
+}
+
+.sidebar-a, .sidebar-a:hover, .sidebar-a:focus, .sidebar-a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar-p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-p:hover {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.install-text {
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+    color: #bebebe;
+    font-size: 18px;
+    margin: 14px;
+    cursor: pointer;
+}

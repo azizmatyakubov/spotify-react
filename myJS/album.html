@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/musicPlayer.css" />
+    <link rel="stylesheet" href="./styles/artist.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/album.css" />
+    <title>Album page</title>
+  </head>
+  <body>
+    <div class="containers">
+      <!-- Sidebar  -->
+      <div class="sidebar">
+        <div class="logo">
+          <a href="./index.html"
+            ><img
+              class="logo-img"
+              src="./assets/images/Spotify_Logo_RGB_White.png"
+              alt="Spotify-logo"
+              srcset=""
+          /></a>
+        </div>
+        <!-- Home, Search, Your Library -->
+        <div class="sidebar-items mb-4">
+          <a href="./index.html ">
+            <div class="home-btn sidebar-button d-flex">
+              <div class="sidebar-img"><i class="fa-solid fa-house"></i></div>
+              <a href="./index.html"
+                ><span class="sidebar-span-text">Home</span></a
+              >
+            </div>
+          </a>
+          <div class="search-btn sidebar-button d-flex">
+            <div class="sidebar-img">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <a href="./search.html"
+              ><span class="sidebar-span-text">Search</span></a
+            >
+          </div>
+          <div class="your-liblary-btn sidebar-button d-flex">
+            <div class="sidebar-img">||\</div>
+            <span class="sidebar-span-text">Your Library</span>
+          </div>
+        </div>
+
+        <!-- Create Playlist, Liked songs  -->
+        <div class="sidebar-items mb-2">
+          <div class="sidebar-item sidebar-button d-flex">
+            <div class="sidebar-img bg-grey">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="sidebar-text">Create Playlist</div>
+          </div>
+          <div class="sidebar-item sidebar-button d-flex">
+            <div class="sidebar-img bg-linear">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="sidebar-text">Liked Songs</div>
+          </div>
+          <!-- line  -->
+          <hr />
+        </div>
+        <!-- Sidebar music lists  -->
+
+        <div class="sidebar-music-lists">
+          <a class="sidebar-a" href="#">
+            <p class="sidebar-p">Funky Heavy Bluesy</p>
+          </a>
+        </div>
+        <div class="install-text">
+          <i class="fa-solid fa-circle-arrow-down mr-1"></i>Install App
+        </div>
+      </div>
+      <div></div>
+      <main>
+        <!-- header section  -->
+        <div class="album-header-section">
+          <div class="navbar">
+            <div class="header-navbar-arrows">
+              <div class="header-navbar-arrows__left">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+              <div class="header-navbar-arrows__right">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+
+            <!-- Dropdown  -->
+            <div class="header-navbar-dropdown">
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn dropdown-button dropdown-toggle p-0"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="dropdown-image"
+                    src="./assets/images/eminem.jpg"
+                    alt="dropdown-image"
+                    srcset=""
+                  />
+                  <span class="dropdown-text">John Trump</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right bg-dark">
+                  <a class="dropdown-item" href="./album.html">Album</a>
+                  <a class="dropdown-item" href="./artist.html">Artist</a>
+                  <a class="dropdown-item" href="./login.html">Log out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid" id="album-header">
+            <!-- this is the album header-->
+          </div>
+          <!-- footer section  -->
+          <div class="album-footer-section">
+            <!-- top items  -->
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 d-flex align-items-center pl-5 justify-content-between"
+                >
+                  <div class="circle ml-1">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <div class="heart-icon">
+                    <i class="far fa-heart text-muted"></i>
+                  </div>
+                  <div><i class="fa-solid fa-ellipsis text-muted"></i></div>
+                </div>
+              </div>
+              <div class="row mx-4">
+                <div class="col mt-3 d-flex justify-content-between">
+                  <span class="text-muted"># TITLE</span>
+                  <span class="text-muted">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-clock"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                      <path
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center"><hr /></div>
+              <div class="row mx-4 album-music-list">
+
+                <!-- place  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <audio id="myAudio">
+      <source src="./assets/music/thriller.mp3" type="audio/mp3" />
+    </audio>
+    <!-- Media bar  -->
+    <footer>
+      <div class="music-player">
+        <div class="song-bar">
+          <div class="song-infos">
+            <div class="image-container">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Michael_Jackson_-_Thriller.jpg/220px-Michael_Jackson_-_Thriller.jpg"
+                alt="Michael Jackson album cover"
+              />
+            </div>
+            <div class="song-description">
+              <p class="title">Thriller</p>
+              <p class="artist">Michael Jackson</p>
+            </div>
+          </div>
+          <div class="icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-compress"></i>
+          </div>
+        </div>
+        <div class="progress-controller">
+          <div class="control-buttons">
+            <i class="fas fa-random"></i>
+            <i onclick="pause()" class="fas fa-step-backward"></i>
+            <i onclick="play()" class="play-pause fas fa-play"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-undo-alt"></i>
+          </div>
+          <div class="progress-container">
+            <span>0:49</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <span>4:20</span>
+          </div>
+        </div>
+        <div class="other-features">
+          <i class="fas fa-list-ul"></i>
+          <i class="fas fa-desktop"></i>
+          <div class="volume-bar">
+            <i class="fas fa-volume-down"></i>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="./js/play.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/eff821e088.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
