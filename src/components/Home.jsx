@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import styled from "styled-components";
 import MusicRow from "./musicRow/MusicRow";
 import { useState, useEffect } from "react";
+import MusicPlayer from "./musicPlayer/MusicPlayer";
 
 const Home = () => {
   const [firstRow, setFirstRow] = useState([]);
@@ -37,6 +38,7 @@ const Home = () => {
       <Navbar />
       <MusicRow title="Queen" musics={firstRow} />
       <MusicRow title="Eminem" musics={SecondRow} />
+      <MusicPlayer />
     </HomeWrapper>
   );
 };
@@ -48,4 +50,5 @@ const HomeWrapper = styled.div`
   background-color: green;
   background-image: url("/images/spotify-bg.png");
   background-size: cover;
+  padding: 0;
 `;

@@ -13,7 +13,7 @@ const MusicRow = (props) => {
           console.log(music, "music");
           return (
             <Col xs={6} md={2}>
-              <Music img={music.album.cover_medium} />{" "}
+              <Music img={music.album.cover_medium} title={music.artist.name} />
             </Col>
           );
         })}

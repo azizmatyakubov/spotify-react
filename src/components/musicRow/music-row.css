@@ -1,5 +1,6 @@
 .container {
-    padding-left: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     color: white;
     margin-top: 2rem;
     flex-wrap: nowrap;
